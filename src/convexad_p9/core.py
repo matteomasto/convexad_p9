@@ -71,7 +71,7 @@ def train_step(
     """
 
     with tf.GradientTape(persistent=True) as tape:
-        support, amplitude, phase = model()
+        support, amplitude, phase = model(Iobs)
 
         loss = total_loss(
             support,
