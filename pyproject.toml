@@ -1,0 +1,18 @@
+[project]
+name = "convexad-p9"
+version = "0.1.0"
+description = "A geometrically regularized automatic differentiation framework for BCDI phase retrieval on Power9/PPC64LE systems"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+
+dependencies = [
+    "numpy>=1.26,<2",
+    "scipy>=1.13,<1.14",
+    "scikit-image>=0.25,<0.26",
+    "hdf5plugin>=3.3,<4",
+    "matplotlib>=3.10,<3.11",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
